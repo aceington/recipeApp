@@ -11,7 +11,6 @@ app.service('recipeService', function($http){
     })
   }
   this.getRecipeDetail = function(id){
-    console.log(id);
     var promise = $http({
       method: 'GET',
       url: getBaseUrl + id

@@ -1,8 +1,22 @@
-
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+$font-style:    'Josefin Sans', sans-serif;
 
 .pics{
   height: 200px;
   width: 100%;
+  border-radius: 5px;
+}
+.logo{
+  position: absolute;
+  right: 75px;
+  top: 15px;
+}
+
+.logo-nav{
+  background: url("fork-logo.svg") no-repeat;
+  width: 120px;
+  height: 100px;
+  background-size: contain;
 }
 .recipe-block{
   height: 250px;
@@ -10,9 +24,9 @@
   display: flex;
   flex-wrap: wrap;
 }
-
 .page-title{
   text-align: center;
+  font-family: $font-style;
   color: black;
 }
 .image{
@@ -29,20 +43,92 @@
   background: url("http://www.ikea.com/gb/en/images/rooms/ikea-a-small-kitchen-for-smart-chefs__1364316014026-s4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+
 }
 .search-bar{
-  border-radius: 20px;
+  border-radius: 5px;
+  padding:10px 20px;
+  font-family: $font-style;
+
 }
 .title-font{
   font-size: 60px;
-}
 
+}
+.carousel {
+  width:640px;
+  height:360px;
+}
 .details-box{
-  width: 40%;
+  display: flex;
   height: 60%;
-  background-color: white;
-  opacity: .5;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 13% 0 13%;
+}
+.details-box2{
+  display: flex;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 3% 0 3%;
+  flex-direction: column;
 }
 .hover-item:hover {
 	opacity: .5;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+html,
+body {
+    overflow-x: hidden;
+}
+body {
+    padding-top: 100px;
+}
+footer {
+    padding: 30px 0;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-container {
+    padding: 20px 0 20px 0;
+}
+
+.navbar.navbar-fixed-top.fixed-theme {
+    background-color: #222;
+    border-color: #080808;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+}
+
+.navbar-brand.fixed-theme {
+    font-size: 18px;
+}
+
+.navbar-container.fixed-theme {
+    padding: 0;
+}
+
+.navbar-brand.fixed-theme,
+.navbar-container.fixed-theme,
+.navbar.navbar-fixed-top.fixed-theme,
+.navbar-brand,
+.navbar-container{
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
+}
+.carousel-position{
+  display: flex;
+  justify-content: center;
 }

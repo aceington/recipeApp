@@ -1,19 +1,20 @@
 <div class="page-title">
-  <div>
-    <h1 class="title-font">{{recipeDetails.recipe.title}}</h1>
-    <a target="_blank" href="{{recipeDetails.recipe.source_url}}">view instructions</a>
-    <br>
-    <br>
-    <img class="image" src="{{recipeDetails.recipe.image_url}}" alt="">
-    <br>
-    <br>
-    <br>
-    <div ng-repeat='ingredients in recipeDetails.recipe.ingredients'>
-      <ul>
-        {{ingredients}}
-      </ul>
+    <div class="details-box">
+      <div>
+        <h1 class="title-font">{{recipeDetails.recipe.title}}</h1>
+        <a target="_blank" href="{{recipeDetails.recipe.source_url}}">view instructions</a>
+        <br>
+        <br>
+        <img class="image" src="{{recipeDetails.recipe.image_url}}" alt="">
+        <br>
+        <br>
+        <p style="font-size: 20px;">Ingredients:</p>
+        <div ng-repeat='ingredients in recipeDetails.recipe.ingredients'>
+          <ul>
+            {{ingredients}}
+          </ul>
+          <br>
+        </div>
+      </div>
     </div>
   </div>
-
-
-</div>
