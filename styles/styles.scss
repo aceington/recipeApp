@@ -1,0 +1,48 @@
+
+
+.pics{
+  height: 200px;
+  width: 100%;
+}
+.recipe-block{
+  height: 250px;
+  width: 275px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-title{
+  text-align: center;
+  color: black;
+}
+.image{
+  display:inline-block;
+  margin:auto;
+}
+#food{
+  width: 100%;
+}
+.search{
+  justify-content: center;
+}
+.home{
+  background: url("http://www.ikea.com/gb/en/images/rooms/ikea-a-small-kitchen-for-smart-chefs__1364316014026-s4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.search-bar{
+  border-radius: 20px;
+}
+.title-font{
+  font-size: 60px;
+}
+
+.details-box{
+  width: 40%;
+  height: 60%;
+  background-color: white;
+  opacity: .5;
+}
+.hover-item:hover {
+	opacity: .5;
+}
