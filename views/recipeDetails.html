@@ -8,13 +8,13 @@
         <img class="image" src="{{recipeDetails.recipe.image_url}}" alt="">
         <br>
         <br>
-        <p style="font-size: 20px;">Ingredients:</p>
-        <div ng-repeat='ingredients in recipeDetails.recipe.ingredients'>
-          <ul>
+        <p style="font-size: 23px;">Ingredients:</p>
+        <ul ng-repeat='ingredients in recipeDetails.recipe.ingredients'>
+          <li class="details-font">
             {{ingredients}}
-          </ul>
+          </li>
           <br>
-        </div>
+        </ul>
       </div>
     </div>
   </div>
